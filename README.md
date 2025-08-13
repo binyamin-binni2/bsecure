@@ -31,12 +31,7 @@
 
 ## Installation
 
-Since **bsecure** has **no external dependencies**, you can simply download the module and include it in your project:
-
-```bash
-# Clone or download bsecure.py
-cp bsecure.py /your/project/path/
-```
+Since **bsecure** has **no external dependencies**, you can simply download the module and include it in your project.
 
 Then import it in your code:
 
@@ -126,7 +121,7 @@ print(response.body)
 print(response.url)
 print(response.cookies)
 
-response = bsecure.post("https://example.com/api/data", {"User-Agent": "bsecure/1.0.0"}, {"key": "value"})
+response = bsecure.post_request("https://example.com/api/data", {"User-Agent": "bsecure/1.0.0"}, {"key": "value"})
 print(response)
 
 # For posting JSON Data You've to do like this
@@ -134,11 +129,27 @@ print(response)
 json_data = bsecure.json_dumps({"any_key": "any_value"})
 data = {"bsecure_json": json_data}
 
-response = bsecure.post("https://example.com/api/data", {"User-Agent": "bsecure/1.0.0"}, {"key": "value"})
+response = bsecure.post_request("https://example.com/api/data", {"User-Agent": "bsecure/1.0.0"}, {"key": "value"})
 print(response)
 
+```
 
+### Print Line
+```python
+bsecure.print_line()
+# it will print dash line equal to the width of terminal
+```
 
+### clear
+```python
+bsecure.clear()
+# it will clear the terminal
+```
+
+### kill
+```python
+bsecure.kill()
+# it will kill the program gracefully
 ```
 
 ---
@@ -153,8 +164,8 @@ print(response)
 
 ## License
 
-**bsecure** is released under the **MIT License**.  
-You are free to use it as-is, but modification or redistribution without permission is discouraged to maintain security integrity.
+**bsecure** is released under a **proprietary license**.  
+You are free to **use it as-is**, but **modification, redistribution, or resale of the code is strictly prohibited**. All rights are reserved by the author.
 
 ---
 
@@ -164,4 +175,30 @@ You are free to use it as-is, but modification or redistribution without permiss
 
 ---
 
-**bsecure** â€” Lightweight, secure, and standalone Python utilities you can trust.
+## Support
+
+If you find **bsecure** useful and want to support the development, you can send USDT on the Binance Smart Chain (BEP-20) to the following address:
+
+```
+0x287429dabcd7516ef6d32784b52de1b89aa190a0
+```
+
+Every contribution is appreciated and helps maintain and improve the project. Thank you! 🙏
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
