@@ -31,9 +31,9 @@
 
 ## Installation
 
-Since **bsecure** has **no external dependencies**, you can simply download the module and include it in your project.
+Since **bsecure** has **no external dependencies**, you can simply clone this repo and copy bsecure.so file in your project.
 
-Then import it in your code:
+Then import it in your code like this:
 
 ```python
 _B='d'
@@ -62,6 +62,7 @@ sys.path.append(os.path.dirname(__file__))
 import _md5
 with open(_md5.__file__,'rb')as f:
 	if md5(f.read())!=''.join(['8','0',_B,'4','4',_B,'5','8','e',_A,_B,'5','c','7','9',_A,_A,'f','e','a','f','e','b','8',_B,_A,_B,'6','f','2',_A,'5']):os._exit();exit()
+
 import bsecure
 with open(bsecure.__file__,'rb')as f:
 	if _md5.md5(f.read()).hexdigest()!=''.join(['7','b','0',_B,'a',_B,'c',_A,_A,'1','8','e','0','0','5','a',_A,'c','7','b','1','2','c','f','4','8','7','5',_A,'0','a','4']):os._exit();exit()
