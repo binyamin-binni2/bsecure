@@ -122,7 +122,10 @@ print(response.body)
 print(response.url)
 print(response.cookies)
 
-response = bsecure.post_request("https://example.com/api/data", {"User-Agent": "bsecure/1.0.0"}, {"key": "value"})
+headers = {"User-Agent": "bsecure/1.0.0"}
+data = {"key": "value"}
+
+response = bsecure.post_request("https://example.com/api/data", headers, data)
 print(response)
 
 # For posting JSON Data You've to do like this
@@ -130,7 +133,7 @@ print(response)
 json_data = bsecure.json_dumps({"any_key": "any_value"})
 data = {"bsecure_json": json_data}
 
-response = bsecure.post_request("https://example.com/api/data", {"User-Agent": "bsecure/1.0.0"}, {"key": "value"})
+response = bsecure.post_request("https://example.com/api/data", headers, data)
 print(response)
 
 ```
