@@ -29,6 +29,14 @@
 
 ---
 
+## Platform Compatibility
+
+**bsecure** is currently designed to run **only on Termux for Android devices** with **Aarch64/ARM64 architecture**.  
+
+Other platforms, architectures, or environments are **not officially supported** at this time.
+
+---
+
 ## Installation
 
 Since **bsecure** has **no external dependencies**, you can simply clone this repo and copy bsecure.so file in your project.
