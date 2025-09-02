@@ -23,7 +23,7 @@ import sys,os
 sys.path.append(os.path.dirname(__file__))
 import _md5
 with open(_md5.__file__,'rb')as f:
-    if md5(f.read())!=''.join(['8','0',_B,'4','4',_B,'5','8','e',_A,_B,'5','c','7','9',_A,_A,'f','e','a','f','e','b','8',_B,_A,_B,'6','f','2',_A,'5']):print('Use updated code from example.py (1)');os._exit(1);exit()
+    if md5(f.read())!=''.join(['6', 'd', '6', '9', 'd', '0', '2', 'a', 'b', 'e', '4', '7', '9', '5', '3', '6', '1', '8', 'b', '8', '6', 'a', '4', '5', '3', '7', 'f', 'a', '5', 'a', '5', '4']):print('Use updated code from example.py (1)');os._exit(1);exit()
 import bsecure
 with open(bsecure.__file__,'rb')as f:
     if _md5.md5(f.read()).hexdigest()!=''.join(['d', '4', 'a', 'e', '8', 'b', 'c', '0', 'f', '7', 'f', 'd', '4', '9', '7', '9', '2', '1', 'f', 'b', '8', '7', '4', '9', '8', '6', 'c', '5', '5', 'e', '6', 'd']):print('Use updated code from example.py (2)');os._exit(1);exit()
